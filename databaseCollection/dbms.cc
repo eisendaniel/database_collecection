@@ -22,7 +22,7 @@ DbTable::DbTable()
  * frees the dynamically allocated memory
  * */
 DbTable::~DbTable()
-{ delete[] table; }
+{ free(table); }
 
 bool DbTable::show(unsigned int row_n)
 {
